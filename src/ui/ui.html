@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>오토레이아웃 변환기</title>
+  <!-- 스타일은 ui.ts에서 import 됩니다 -->
+</head>
+<body>
+  <div class="container">
+    <h2>오토레이아웃 변환기</h2>
+    
+    <div class="section">
+      <div class="form-group">
+        <label>간격 (px)</label>
+        <input type="number" id="spacing" value="8" min="0">
+      </div>
+      
+      <div class="form-group">
+        <label>패딩 (px)</label>
+        <div class="row">
+          <div class="col">
+            <input type="number" id="padding-top" placeholder="상단" min="0">
+          </div>
+          <div class="col">
+            <input type="number" id="padding-right" placeholder="우측" min="0">
+          </div>
+        </div>
+        <div class="row" style="margin-top: 8px;">
+          <div class="col">
+            <input type="number" id="padding-bottom" placeholder="하단" min="0">
+          </div>
+          <div class="col">
+            <input type="number" id="padding-left" placeholder="좌측" min="0">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="form-group">
+        <div class="checkbox-group">
+          <input type="checkbox" id="auto-detect-padding" checked>
+          <label for="auto-detect-padding">패딩 자동 감지</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="auto-detect-spacing" checked>
+          <label for="auto-detect-spacing">간격 자동 감지</label>
+        </div>
+      </div>
+    </div>
+    
+    <div id="result-container" style="display: none;">
+      <div id="result-message" class="message"></div>
+      <div id="messages-list" class="messages-list"></div>
+    </div>
+    
+    <div class="button-group">
+      <button id="cancel-button" class="secondary">취소</button>
+      <button id="convert-button" class="primary">변환하기</button>
+    </div>
+  </div>
+
+  <script>
+    // UI 파일에서는 스크립트 작업이 필요하지만, 웹팩 설정에 따라 ui.ts에서 처리됩니다.
+  </script>
+</body>
+</html> 

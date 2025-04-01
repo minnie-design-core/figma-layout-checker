@@ -1,0 +1,29 @@
+{
+  "name": "Auto Layout Converter",
+  "id": "figma-auto-layout-converter",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma"],
+  "menu": [
+    {
+      "name": "프레임을 오토레이아웃으로 변환",
+      "command": "convert-to-autolayout"
+    },
+    {
+      "separator": true
+    },
+    {
+      "name": "설정",
+      "command": "show-settings"
+    }
+  ],
+  "permissions": [],
+  "relaunchButtons": [
+    {
+      "command": "edit-autolayout",
+      "name": "오토레이아웃 편집",
+      "multipleSelection": false
+    }
+  ]
+} 
